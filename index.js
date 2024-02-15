@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import PegawaiRoute from "./routes/PegawaiRoute.js";
 import JabatanRoute from "./routes/JabatanRoute.js";
-import DivisiRoute from "./routes/JabatanRoute.js";
+import DivisiRoute from "./routes/DivisiRoute.js";
 
 const app = express();
 app.use(cors());
