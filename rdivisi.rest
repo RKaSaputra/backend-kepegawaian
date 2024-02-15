@@ -1,0 +1,24 @@
+GET http://localhost:5000/divisi
+
+###
+GET http://localhost:5000/divisi/1
+
+###
+POST http://localhost:5000/divisi
+Content-Type: application/json
+
+{
+    "id_divisi": 23,
+    "divisi": "marketing"
+}
+
+###
+PATCH http://localhost:5000/divisi/23
+Content-Type: application/json
+
+{
+    "divisi": "akuntansi",
+}
+
+###
+DELETE http://localhost:5000/divisi/2

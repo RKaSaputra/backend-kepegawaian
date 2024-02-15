@@ -1,0 +1,36 @@
+GET http://localhost:5000/pegawai
+
+###
+GET http://localhost:5000/pegawai/5
+
+###
+POST http://localhost:5000/pegawai
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin"
+}
+
+###
+POST http://localhost:5000/pegawai
+Content-Type: application/json
+
+{
+  "nama_pegawai": "John Doe",
+  "alamat": "Jl. Contoh No. 123",
+  "id_jabatan": 1,
+  "id_divisi": 1
+}
+
+
+###
+PATCH http://localhost:5000/pegawai/1
+Content-Type: application/json
+
+{
+    "username": "M Fikri",
+}
+
+###
+DELETE http://localhost:5000/pegawai/2

@@ -1,0 +1,30 @@
+GET http://localhost:5000/jabatan
+
+###
+GET http://localhost:5000/jabatan/
+Content-Type: application/json
+
+{
+    "id_jabatan": 1
+}
+
+###
+POST http://localhost:5000/jabatan
+Content-Type: application/json
+
+{
+    "jabatan": "direktur",
+    "gaji_pokok": 60000000
+}
+
+###
+PATCH http://localhost:5000/jabatan/1
+Content-Type: application/json
+
+{
+  "jabatan": "Manager Senior",
+  "gaji_pokok": 12000000
+}
+
+###
+DELETE http://localhost:5000/jabatan/2
